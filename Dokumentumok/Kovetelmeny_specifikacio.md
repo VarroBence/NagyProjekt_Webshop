@@ -6,3 +6,6 @@ A felhasználó tud válogatni pólók között, amiket megtud vásárolni. Kitu
 
 ## 2. Jelenlegi helyzet
 A megrendelő még nem rendelkezik webshoppal, így minket kért fel, hogy készítsünk a termékeinek egy olyan oldalt, ahol értékesíteni tudja őket. Ezáltal több vásárló ismerheti meg a termékeit, mivel a mai digitális világban így sokkal egyszerűbben jutnak hozzá a termékekhez a vásárlók, valamint kényelmesebben tudnak az emberek vásárolni.
+
+## 3. Vágyálom rendszer
+A projekt célja egy olan webshop amely az oonline vásárlás lehetőségét biztosítja a vásárlók számára. A redszer egy platformon, weben érhető el. Ha felhazsnáló nem regisztrál, akkor csak böngészni tud, regisztráció után tudja kezelni a kosarát, rendelést is tud leadni. A rendszer követi a felhasználó előző vásárlásait is, fizetési módjait, szállítási címeit, a visszatérő vásárlók felhazsnálói élménye érdekében. Adminisztrációs jogokkal bejelentkezve, a felületen keresztül módosításokat lehet végezni a termékekkel kapcsolatban: hozzáadni és törölni termékeket, azok tulajdonságait, adatait módosítani.
