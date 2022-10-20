@@ -12,3 +12,6 @@ A projekt célja egy olyan webshop amely az online vásárlás lehetőségét bi
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 A mai világban minden kereskedő a profit növelésére törekszik, aminek az egyik módja a vásárlóbázis növelése. Sok ember számra felesleges időt és energiát jelent elmenni egy üzletbe személyesen vásárolni, számukra sokkal kényelmesebb, ha azt az otthon kényelméből egy weboldalon elintézheti sokkal kevesebb idő alatt, anélkül hogy kikéne mozdulni a lakásból. A webshop erre kínál egy lehetőséget.
+
+## 5. Igényelt üzleti folyamatok modellje
+A megrendelő azt szeretné, hogy a főoldalon alapból láthatóak legyenek a termékek. A jobb felső sarokban két gomb segítségével be tud jelentkezni, vagy regisztrálni tud a felhasználó egy másik oldalra való átirányítás után. A bejelentkezést követően lehetőséget kell adniszerepkörtől függően az oldal funkcióihoz. A termékeket az admin tudja módosítani valmaint törölni az oldalon.
