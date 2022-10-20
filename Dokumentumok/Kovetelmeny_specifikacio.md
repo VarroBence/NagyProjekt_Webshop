@@ -9,3 +9,6 @@ A megrendelő még nem rendelkezik webshoppal, így minket kért fel, hogy kész
 
 ## 3. Vágyálom rendszer
 A projekt célja egy olan webshop amely az oonline vásárlás lehetőségét biztosítja a vásárlók számára. A redszer egy platformon, weben érhető el. Ha felhazsnáló nem regisztrál, akkor csak böngészni tud, regisztráció után tudja kezelni a kosarát, rendelést is tud leadni. A rendszer követi a felhasználó előző vásárlásait is, fizetési módjait, szállítási címeit, a visszatérő vásárlók felhazsnálói élménye érdekében. Adminisztrációs jogokkal bejelentkezve, a felületen keresztül módosításokat lehet végezni a termékekkel kapcsolatban: hozzáadni és törölni termékeket, azok tulajdonságait, adatait módosítani.
+
+## 4. Jelenlegi üzleti folyamatok modellje
+A mai világban minden kereskedő a profit növelésére törekszik, aminek az egyik módja a vásárlóbázis növelése. Sok ember számra felesleges időt és energiát jelent elmenni egy üzletbe személyesen vásárolni, számukra sokkal kényelmesebb, ha azt az otthon kényelméből egy weboldalon elintézheti sokkal kevesebb idő alatt, anélkül hogy kikéne mozdulni a lakásból. A webshop erre kínál egy lehetőséget.
