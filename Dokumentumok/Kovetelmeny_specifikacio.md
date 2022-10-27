@@ -34,4 +34,5 @@ A megrendelő azt szeretné, hogy a főoldalon alapból láthatóak legyenek a t
 
 ## 7. Fogalomtár
 Main page - Ez az az oldal, amelyet legelőször jelenik meg a felhasználó számára. Itt jelennek meg a megásárolható termékek.
+
 CRUD műveletek - Azok a műveletek, amelyek az adatbázis kezeléshez szükségesek. Ilyen művelet az: adatbázisból adatok olvasása, adabázisba adatok feltöltése, ott lévő adat törlése, vagy módosíása.
