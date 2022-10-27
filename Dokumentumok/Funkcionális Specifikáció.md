@@ -13,3 +13,8 @@ A mai világban, már a legtöbb cég rendelkezik online felülettel, ahol elér
 
 ## 4. Igényelt üzleti folyamatok modellje
 Azért hogy egyszerűbbé tegyük a vásárlók és eladók közötti interakciót, létrehozunk egy alkalmazást, ami a mai kornak megfelelően helyt tud állni az elektronikai világban. Az eladóknak egyszerűbb lesz nagyobb tömeget kiszolgálnia a rendelésekkel, így időt és munkaerőt takaríthat meg. A vásárlóknak is sokkal egyszerűbb lesz megrendelni az egyes pólókat, nem is kell elmenniük otthonról.
+
+
+## 6. Használati esetek
+Felhasználó: Rendeléseket tud leadni az oldalon, melyeket a kosarában nyilvántart. Ezeket a termékeket majd a rendelés leadása gombbal megrendelheti a megadott szállítási címre.
+Admin: A weboldalt tudja módosítani, CRUD műveleteket végezni a termékeken, ezáltal frissíteni tudja a weboldal repertoárját.
