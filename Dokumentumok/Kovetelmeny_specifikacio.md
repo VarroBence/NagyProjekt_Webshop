@@ -32,3 +32,6 @@ A megrendelő azt szeretné, hogy a főoldalon alapból láthatóak legyenek a t
 | K9 | Felület | Termékek elhelyezése | A fő oldalon találhatók középen, ahol a vásárló hozzá tudja adni őket a kosarához |
 | K10 | Jogosultság | Admin felület | Adminfelület, amivel módosítani lehet a termékeket|
 
+## 7. Fogalomtár
+Main page - Ez az az oldal, amelyet legelőször jelenik meg a felhasználó számára. Itt jelennek meg a megásárolható termékek.
+CRUD műveletek - Azok a műveletek, amelyek az adatbázis kezeléshez szükségesek. Ilyen művelet az: adatbázisból adatok olvasása, adabázisba adatok feltöltése, ott lévő adat törlése, vagy módosíása.
