@@ -16,3 +16,19 @@ A mai világban minden kereskedő a profit növelésére törekszik, aminek az e
 ## 5. Igényelt üzleti folyamatok modellje
 A megrendelő azt szeretné, hogy a főoldalon alapból láthatóak legyenek a termékek. A jobb felső sarokban két gomb segítségével be tud jelentkezni, vagy regisztrálni tud a felhasználó egy másik oldalra való átirányítás után. A bejelentkezést követően lehetőséget kell adniszerepkörtől függően az oldal funkcióihoz. A termékeket az admin tudja módosítani valmaint törölni az oldalon.
 ![Igényelt üzleti folyamatok modellje](https://user-images.githubusercontent.com/78543866/198306189-7f86ad36-e210-486e-a9eb-1348df27cd96.png)
+
+## 6. Követelmény lista
+
+| Id | Modul | Név | Leírás |
+| :---: | --- | --- | --- |
+| K1 | Jogosultság | Bejelentkezési felület |A felhasználó az email címe és a jelszava segítségével bejelentkezhet.Ha a megadott email cím vagy jelszó nem megfelelő, akkor a felhasználó hibaüzenetet kap.|
+| K2| Jogosultság |Regisztráció| A felhasználó a felhasználói nevének, email címének és jelszavának megadásával regisztrálja magát. A jelszó tárolása kódolva történik az adatbázisban. Ha valamelyik adat ezek közül hiányzik vagy nem felel meg a követelményeknek, akkor a rendszer értesíti erről a felhasználót. |
+| K3| Jogosultság | Jogosultsági szintek| - Admin: Rendszerhozzáférés, pólók feltöltése, CRUD műveletek végzése a termékeken <br> - User: termékek hozzáadása a személyes kosárhoz, rendelés leadás, termék törlése a kosárból|
+| K4 | Felület | Regisztráció | A felhasználók itt tudnak regisztrálni a rendszerhez |
+| K5 | Felület | Bejelentkezés | A felhasználók itt tudnak bejelentkezni a weboldalra |
+| K6 | Felület | Főoldal| A weboldal main paige oldala  |
+| K7 | Felület | Regisztráció / Belépés | A main paige jobb felső sarkában található meg az oda vezető gombok|
+| K8 | Felület | Kosár|  A main paige jobb felső sarkában található meg az oda vezető gomb |
+| K9 | Felület | Termékek elhelyezése | A fő oldalon találhatók középen, ahol a vásárló hozzá tudja adni őket a kosarához |
+| K10 | Jogosultság | Admin felület | Adminfelület, amivel módosítani lehet a termékeket|
+
