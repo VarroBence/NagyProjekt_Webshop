@@ -15,3 +15,4 @@ A mai világban minden kereskedő a profit növelésére törekszik, aminek az e
 
 ## 5. Igényelt üzleti folyamatok modellje
 A megrendelő azt szeretné, hogy a főoldalon alapból láthatóak legyenek a termékek. A jobb felső sarokban két gomb segítségével be tud jelentkezni, vagy regisztrálni tud a felhasználó egy másik oldalra való átirányítás után. A bejelentkezést követően lehetőséget kell adniszerepkörtől függően az oldal funkcióihoz. A termékeket az admin tudja módosítani valmaint törölni az oldalon.
+![Igényelt üzleti folyamatok modellje](https://user-images.githubusercontent.com/78543866/198306189-7f86ad36-e210-486e-a9eb-1348df27cd96.png)
