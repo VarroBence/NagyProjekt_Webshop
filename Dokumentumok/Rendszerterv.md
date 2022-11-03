@@ -28,7 +28,8 @@ Tesztelő: Iván Ákos. Tóth Tamás, Varró Bence
 - Rendelések követése, rendelés előzmények megjelenítése a fehasználóknak
 ## 5. Funkcionális terv
 ## 6. Fizikai környezet
-## 7. Architecturális terv
+## 7. Architecturális terv  - !TODO!
+A web alkalmazás Laravel keretrendszerrel készül el.
 ## 8. Implementációs terv
 ## 9. Teszt terv
 ## 10. Telepítési terv
