@@ -30,6 +30,36 @@ Tesztelő: Iván Ákos. Tóth Tamás, Varró Bence
 - A felhsználók nem férhetnek hozzá egymás rendeléseihez és adataihoz, kivéve ha admin szerepkörrel rendelkeznek.
 - Rendelések követése, rendelés előzmények megjelenítése a fehasználóknak
 ## 5. Funkcionális terv
+### 5.1 Rendszerszereplők:
+Felhasználó
+Admin
+
+### 5.2  Rendszerhasználati esetek és lefutásaik:
+Admin
+- Beléphet bármilyen szereplőként teljes hozzáférése van a rendszerhez
+- Termékek hozzáadása a rendszerhez
+- Termékek módosítása
+- Termékek törlése
+
+Felhasználó 
+- Képes termékeket a kosarához adni
+- Képes rendelést leadni
+
+### 5.3 Menühierarchiák:
+Main page:
+- Termékek kilistázása
+- Kosár ikonja
+- Regisztráció/bejelentkezés fül
+- Kijelentkezés
+
+Kosár felület:
+- Hozzáadott termékek mennyiségének és méretének beállítása
+- Rendelés szerkesztése
+- Rendelés leadása
+
+Rendelés leadása utáni felület:
+- Szállítással kapcsolatos személyes adatok megadása
+
 ## 6. Fizikai környezet
 ## 7. Architecturális terv  - !TODO!
 A web alkalmazás Laravel keretrendszerrel készül el.
