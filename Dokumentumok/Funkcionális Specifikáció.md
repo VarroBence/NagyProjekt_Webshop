@@ -20,4 +20,4 @@ Felhasználó: Rendeléseket tud leadni az oldalon, melyeket a kosarában nyilv�
 Admin: A weboldalt tudja módosítani, CRUD műveleteket végezni a termékeken, ezáltal frissíteni tudja a weboldal repertoárját.
 
 ## 7. Forgatókönyv
-Futási időben két szereplő figyelhető meg, az egyik maga a webshop, ami várja a felhasználó utasításait, lépéseit. A másik maga afelhasználó aki utasításokat ad a weboldalnak, regisztráció/belépés, böngészés az áruház termékei között, összegyűjti a kosarába azokat a termékeket, amiket megszeretne vásárolni, majd leadja a rendelését.
+Futási időben három szereplő figyelhető meg, az egyik maga a webshop, ami várja a felhasználó utasításait, lépéseit. A másik maga a felhasználó aki utasításokat ad a weboldalnak, regisztráció/belépés, böngészés az áruház termékei között, összegyűjti a kosarába azokat a termékeket, amiket megszeretne vásárolni, majd leadja a rendelését. A harmadik szereplő egy web-service, ami a weboldalhoz szükséges adatokat szolgáltatja az alkalmazásnak egy adatbázisból.
