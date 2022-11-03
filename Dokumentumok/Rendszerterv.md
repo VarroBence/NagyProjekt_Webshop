@@ -18,6 +18,14 @@ Tesztelő: Iván Ákos. Tóth Tamás, Varró Bence
 
 ## 3. Üzleti folyamatok modellje
 ## 4. Követelmények
+#### Funkcionális követelmények:
+- Felhasználók adatainak tárolása
+- Felhasználók csopartokba szervezése
+- Rendelések tárolása
+- Webes környezeten való működés
+#### Nem funkcionális követelmények:
+- A felhsználók nem férhetnek hozzá egymás rendeléseihez és adataihoz, kivéve ha admin szerepkörrel rendelkeznek.
+- Rendelések követése, rendelés előzmények megjelenítése a fehasználóknak
 ## 5. Funkcionális terv
 ## 6. Fizikai környezet
 ## 7. Architecturális terv
