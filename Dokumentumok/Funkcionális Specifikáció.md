@@ -18,3 +18,6 @@ Azért hogy egyszerűbbé tegyük a vásárlók és eladók közötti interakci�
 ## 6. Használati esetek
 Felhasználó: Rendeléseket tud leadni az oldalon, melyeket a kosarában nyilvántart. Ezeket a termékeket majd a rendelés leadása gombbal megrendelheti a megadott szállítási címre.
 Admin: A weboldalt tudja módosítani, CRUD műveleteket végezni a termékeken, ezáltal frissíteni tudja a weboldal repertoárját.
+
+## 7. Forgatókönyv
+Futási időben két szereplő figyelhető meg, az egyik maga a webshop, ami várja a felhasználó utasításait, lépéseit. A másik maga afelhasználó aki utasításokat ad a weboldalnak, regisztráció/belépés, böngészés az áruház termékei között, összegyűjti a kosarába azokat a termékeket, amiket megszeretne vásárolni, majd leadja a rendelését.
