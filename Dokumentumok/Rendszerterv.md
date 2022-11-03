@@ -67,8 +67,9 @@ Nincsenek megvásárolt komponenseink.
 
 Fejlesztői eszközök: Visual Studio Code
 
-## 7. Architecturális terv  - !TODO!
+## 7. Architecturális terv
 A web alkalmazás Laravel keretrendszerrel készül el.
+
 ## 8. Implementációs terv
 A webes felület főként Php és Laravel nyelven fog készülni. Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében.
 ## 9. Teszt terv
