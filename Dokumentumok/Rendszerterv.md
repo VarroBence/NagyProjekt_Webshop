@@ -61,6 +61,12 @@ Rendelés leadása utáni felület:
 - Szállítással kapcsolatos személyes adatok megadása
 
 ## 6. Fizikai környezet
+Az alkalmazás asztali számítógépre, Windows operációs rendszerre készül.
+
+Nincsenek megvásárolt komponenseink.
+
+Fejlesztői eszközök: Visual Studio Code
+
 ## 7. Architecturális terv  - !TODO!
 A web alkalmazás Laravel keretrendszerrel készül el.
 ## 8. Implementációs terv
