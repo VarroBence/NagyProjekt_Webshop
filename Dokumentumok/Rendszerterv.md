@@ -98,5 +98,8 @@ Admin:
 Képes új árukat felvenni az oldalra, valamint törölni is tud árut.
 
 ## 10. Telepítési terv
+
+Keressen rá a webshop nevére az interneten és kattintson a linkre.
+
 ## 11. Karbantartási terv
 
