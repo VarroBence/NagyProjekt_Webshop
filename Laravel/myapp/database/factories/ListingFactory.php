@@ -18,7 +18,7 @@ class ListingFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(),
-            'price' => $this->faker->sentence(),
+            'price' => $this->faker->numberBetween(1000, 10000),
             'description' => $this->faker->paragraph(5),
         ];
     }
