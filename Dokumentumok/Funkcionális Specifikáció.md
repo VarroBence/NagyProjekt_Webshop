@@ -22,10 +22,18 @@ Azért hogy egyszerűbbé tegyük a vásárlók és eladók közötti interakci�
 Felhasználó: Rendeléseket tud leadni az oldalon, melyeket a kosarában nyilvántart. Ezeket a termékeket majd a rendelés leadása gombbal megrendelheti a megadott szállítási címre.
 Admin: A weboldalt tudja módosítani, CRUD műveleteket végezni a termékeken, ezáltal frissíteni tudja a weboldal repertoárját.
 
-## 7. Forgatókönyv
+## 7. Követelmények megfeleltetése
+Bejelentkezési felület (J1): A felhasználó bejelentkezés után tudja a kosarát megtekinteni, majd a rendelését leadni.
+
+Regisztráció (J2): A felhasználó regisztráció után tudja a kosarába belerakni az árukat, majd azokat megrendelni.
+
+Jogosultsági szintek (J3): A regisztráció során csak általános felhasználó jogosultságú user-ek kerülnek be az adatbázisba. Ebben az adatbázisban alapértelmezetten van egy admin jogosultságú felhasználó, aki termékeket tud hozzáadni/módosítani/törölni az oldalon.
+
+Jelszó módosítása (M1): A felhasználó módosítani tudja a fiókjához megadott jelszavát.
+
+## 8. Forgatókönyv
 Futási időben három szereplő figyelhető meg, az egyik maga a webshop, ami várja a felhasználó utasításait, lépéseit. A másik maga a felhasználó aki utasításokat ad a weboldalnak, regisztráció/belépés, böngészés az áruház termékei között, összegyűjti a kosarába azokat a termékeket, amiket megszeretne vásárolni, majd leadja a rendelését. A harmadik szereplő egy web-service, ami a weboldalhoz szükséges adatokat szolgáltatja az alkalmazásnak egy adatbázisból.
 
-## 8. Fogalomszótár
+## 9. Fogalomszótár
 - CRUD műveleteket: Egy adattáblán elvégezhető műveletek: létrehozás, olvasás, szerkesztés, törlés.
 - web-service: különböző programnyelveken írt és különböző platformokon futó szoftveralkalmazások interneten keresztül történő adatcseréjére használt vebszolgáltatások.
-
