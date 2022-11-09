@@ -79,6 +79,24 @@ Tesztelendő kijelző méretek: 1280x720 (minimum), 1366x768, 1920x1080.
 
 A tesztelés időtartama egy hét.
 
+Tesztelendő funkciók:
+
+User:
+
+A felhasználó bejelentkezés nélkül böngészheti az árukat az oldalon.
+
+A felhasználó képes regisztrálni és utána bejelentkezni.
+
+Regisztráció során nem képes már létező névvel/jelszóval regisztrálni egy új fiókot a felhasználó.
+
+Bejelentkezés után meg tudja nézni a felhasználó a kosarát és módosítani/törölni az abba betett árukat.
+
+A kosárban le tudja adni a rendelését a felhasználó, majd meg tudja adni a postázási adatait.
+
+Admin:
+
+Képes új árukat felvenni az oldalra, valamint törölni is tud árut.
+
 ## 10. Telepítési terv
 ## 11. Karbantartási terv
 
