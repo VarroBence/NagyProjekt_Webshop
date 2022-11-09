@@ -32,7 +32,7 @@ Jogosultsági szintek (J3): A regisztráció során csak általános felhasznál
 Jelszó módosítása (M1): A felhasználó módosítani tudja a fiókjához megadott jelszavát.
 
 ## 8. Forgatókönyv
-Futási időben három szereplő figyelhető meg, az egyik maga a webshop, ami várja a felhasználó utasításait, lépéseit. A másik maga a felhasználó aki utasításokat ad a weboldalnak, regisztráció/belépés, böngészés az áruház termékei között, összegyűjti a kosarába azokat a termékeket, amiket megszeretne vásárolni, majd leadja a rendelését. A harmadik szereplő egy web-service, ami a weboldalhoz szükséges adatokat szolgáltatja az alkalmazásnak egy adatbázisból.
+Futási időben három jogosultságú felhasználó van. Kezdetben azok a felhasználók, akik nem regisztráltak, azoknak nincs jogosultsága. Látják az oldalon lévő árukat, viszont nem tudják megnézni a kosraukat, nem tudnak ahhoz hozzá adni árukat, valamint nem tudják leadni a rendelésüket.
 
 ## 9. Fogalomszótár
 - CRUD műveleteket: Egy adattáblán elvégezhető műveletek: létrehozás, olvasás, szerkesztés, törlés.
