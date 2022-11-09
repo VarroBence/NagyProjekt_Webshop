@@ -32,7 +32,7 @@ Jogosultsági szintek (J3): A regisztráció során csak általános felhasznál
 Jelszó módosítása (M1): A felhasználó módosítani tudja a fiókjához megadott jelszavát.
 
 ## 8. Forgatókönyv
-Futási időben három jogosultságú felhasználó van. Kezdetben azok a felhasználók, akik nem regisztráltak, azoknak nincs jogosultsága. Látják az oldalon lévő árukat, viszont nem tudják megnézni a kosraukat, nem tudnak ahhoz hozzá adni árukat, valamint nem tudják leadni a rendelésüket.
+Futási időben három jogosultságú felhasználó van. Kezdetben azok a felhasználók, akik nem regisztráltak, azoknak nincs jogosultsága. Látják az oldalon lévő árukat, viszont nem tudják megnézni a kosraukat, nem tudnak ahhoz hozzá adni árukat, valamint nem tudják leadni a rendelésüket. Regisztráció után a felhasználó egy általános felhasználói jogosultságot kap, amellyel már láthatja és módosíthatja a kosarát, valamint az abban lévő árukat.
 
 ## 9. Fogalomszótár
 - CRUD műveleteket: Egy adattáblán elvégezhető műveletek: létrehozás, olvasás, szerkesztés, törlés.
