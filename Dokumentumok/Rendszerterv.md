@@ -72,7 +72,11 @@ A web alkalmazás Laravel keretrendszerrel készül el.
 
 ## 8. Implementációs terv
 A webes felület főként Php és Laravel nyelven fog készülni. Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében.
-## 9. Teszt terv
+
+## 9. Adatbázis terv
+![Database model](https://user-images.githubusercontent.com/78543866/200951605-d42866a9-b183-49b5-b369-12b6507b116b.png)
+
+## 10. Teszt terv
 Tesztelendő Windows rendszerek: Windows 10, vagy újabbak.
 
 Tesztelendő kijelző méretek: 1280x720 (minimum), 1366x768, 1920x1080.
@@ -97,10 +101,10 @@ Admin:
 
 Képes új árukat felvenni az oldalra, valamint törölni is tud árut.
 
-## 10. Telepítési terv
+## 11. Telepítési terv
 
 Keressen rá a webshop nevére az interneten és kattintson a linkre.
 
-## 11. Karbantartási terv
+## 12. Karbantartási terv
 
 A weboldal folyamatos üzemeltetése és karbantartása, mely magában foglalja a belső igények változása miatti módosításokat és a környezeti feltételek változása miatt megfogalmazott program-, illetve állomány módosítási igényeket. Ellenőrizni kell, hogy a jövőben kiadott Windows és böngésző verziókkal kompatibilis-e a weboldal. Idő elteltével új opciókat kell hozzáadni a felülethez, hogy fent tartsuk az érdeklődési szintet.
