@@ -25,6 +25,8 @@ Admin: A weboldalt tudja módosítani, CRUD műveleteket végezni a termékeken,
 ## 7. Követelmények megfeleltetése
 Bejelentkezési felület (J1): A felhasználó bejelentkezés után tudja a kosarát megtekinteni, majd a rendelését leadni.
 
+Regisztráció (J2): A felhasználó regisztráció után tudja a kosarába belerakni az árukat, majd azokat megrendelni.
+
 ## 8. Forgatókönyv
 Futási időben három szereplő figyelhető meg, az egyik maga a webshop, ami várja a felhasználó utasításait, lépéseit. A másik maga a felhasználó aki utasításokat ad a weboldalnak, regisztráció/belépés, böngészés az áruház termékei között, összegyűjti a kosarába azokat a termékeket, amiket megszeretne vásárolni, majd leadja a rendelését. A harmadik szereplő egy web-service, ami a weboldalhoz szükséges adatokat szolgáltatja az alkalmazásnak egy adatbázisból.
 
