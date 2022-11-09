@@ -17,7 +17,9 @@ class ListingFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->sentence(),
+            'price' => $this->faker->sentence(),
+            'description' => $this->faker->paragraph(5),
         ];
     }
 }
