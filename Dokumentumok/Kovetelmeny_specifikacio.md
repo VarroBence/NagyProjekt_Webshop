@@ -11,10 +11,10 @@ A megrendelő még nem rendelkezik webshoppal, így minket kért fel, hogy kész
 A projekt célja egy olyan webshop amely az online vásárlás lehetőségét biztosítja a vásárlók számára. A rendszer egy platformon, weben érhető el. Ha felhasználó nem regisztrál, akkor csak böngészni tud, regisztráció után tudja kezelni a kosarát, rendelést is tud leadni. A rendszer követi a felhasználó előző vásárlásait is, fizetési módjait, szállítási címeit, a visszatérő vásárlók felhazsnálói élménye érdekében. Adminisztrációs jogokkal bejelentkezve, a felületen keresztül módosításokat lehet végezni a termékekkel kapcsolatban: hozzáadni és törölni termékeket, azok tulajdonságait, adatait módosítani.
 
 ## 4. Jelenlegi üzleti folyamatok modellje
-A mai világban minden kereskedő a profit növelésére törekszik, aminek az egyik módja a vásárlóbázis növelése. Sok ember számra felesleges időt és energiát jelent elmenni egy üzletbe személyesen vásárolni, számukra sokkal kényelmesebb, ha azt az otthon kényelméből egy weboldalon elintézheti sokkal kevesebb idő alatt, anélkül hogy kikéne mozdulni a lakásból. A webshop erre kínál egy lehetőséget.
+
 
 ## 5. Igényelt üzleti folyamatok modellje
-A megrendelő azt szeretné, hogy a főoldalon alapból láthatóak legyenek a termékek. A jobb felső sarokban két gomb segítségével be tud jelentkezni, vagy regisztrálni tud a felhasználó egy másik oldalra való átirányítás után. A bejelentkezést követően lehetőséget kell adniszerepkörtől függően az oldal funkcióihoz. A termékeket az admin tudja módosítani valmaint törölni az oldalon.
+A mai világban minden kereskedő a profit növelésére törekszik, aminek az egyik módja a vásárlóbázis növelése. Sok ember számra felesleges időt és energiát jelent elmenni egy üzletbe személyesen vásárolni, számukra sokkal kényelmesebb, ha azt az otthon kényelméből egy weboldalon elintézheti sokkal kevesebb idő alatt, anélkül hogy kikéne mozdulni a lakásból. A webshop erre kínál egy lehetőséget. A megrendelő azt szeretné, hogy a főoldalon alapból láthatóak legyenek a termékek. A jobb felső sarokban két gomb segítségével be tud jelentkezni, vagy regisztrálni tud a felhasználó egy másik oldalra való átirányítás után. A bejelentkezést követően lehetőséget kell adniszerepkörtől függően az oldal funkcióihoz. A termékeket az admin tudja módosítani valmaint törölni az oldalon.
 ![Igényelt üzleti folyamatok modellje](https://user-images.githubusercontent.com/78543866/198306189-7f86ad36-e210-486e-a9eb-1348df27cd96.png)
 
 ## 6. Követelmény lista
