@@ -1,22 +1,18 @@
+@props(['tagsCsv'])
+
+@php
+    
+    $tags = explode(',', $tagsCsv);
+
+@endphp
+
+
 <ul class="flex">
+    @foreach($tags as $tag)
     <li
-        class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
-    >
-        <a href="#">T-shirt</a>
+        class="flex items-center justify-center
+         bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs">
+        <a href="/?tag={{$tag}}">{{$tag}}</a>
     </li>
-    <li
-        class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
-    >
-        <a href="#">Black</a>
-    </li>
-    <li
-        class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
-    >
-        <a href="#">Sport</a>
-    </li>
-    <li
-        class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
-    >
-        <a href="#">Latest</a>
-    </li>
+    @endforeach
 </ul>
