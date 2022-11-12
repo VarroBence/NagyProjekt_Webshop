@@ -6,7 +6,7 @@
                 ><i class="fa-solid fa-arrow-left"></i> Back
             </a>
             <div class="mx-4">
-                <div class="bg-gray-50 border border-gray-200 p-10 rounded">
+                <x-card class="p-10">
                     <div
                         class="flex flex-col items-center justify-center text-center"
                     >
@@ -53,7 +53,7 @@
                             
                                 {{--Kosárhoz adáshoz majd szerkeszteni!!!!!!!!!!--}}
                                 <a
-                                    href="https://test.com"
+                                    href=""
                                     target="_blank"
                                     class="block bg-black text-white py-2 rounded-xl hover:opacity-80"
                                     ><i class="fa fa-cart-plus" aria-hidden="true"></i></i> Add to cart</a
@@ -61,7 +61,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </x-card>
             </div>
 
 @endsection
