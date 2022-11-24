@@ -18,7 +18,7 @@
 
                         <h3 class="text-2xl mb-2">{{$listing->title}}</h3>
                         <div class="text-xl font-bold mb-4">{{$listing->price}} Ft</div>
-                        
+
                         <x-listing-tags :tagsCsv="$listing->tags" />
 
                         <div class="border border-gray-200 w-full mb-6"></div>
@@ -31,7 +31,7 @@
                                     {{$listing->description}}
                                 </p>
 
-                            
+
                                 {{--Kosárhoz adáshoz majd szerkeszteni!!!!!!!!!!--}}
                                 <a
                                     href=""

@@ -32,6 +32,13 @@
                 ><img class="w-24" src="{{asset('images/logo.jpg')}}" alt="" class="logo"
             /></a>
             <ul class="flex space-x-6 mr-6 text-lg">
+                @if(Session::has('cart'))
+                @else
+                    {{Session::put('cart', [])}}
+                @endif
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('cart') }}">Cart</a>
+                </li>
                 @guest
                     @if (Route::has('login'))
                         <li class="nav-item">
@@ -59,6 +66,7 @@
                         </form>
                     </li>
                 @endguest
+
             </ul>
         </nav>
 
