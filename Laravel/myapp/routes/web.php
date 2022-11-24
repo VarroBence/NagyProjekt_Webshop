@@ -30,7 +30,7 @@ Route::get('/listings/{listing}', function(Listing $listing) {
     return view('listing', [
         'listing' => $listing
     ]);
-    
+
 });
 Auth::routes();
 
