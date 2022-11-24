@@ -36,6 +36,9 @@ Route::get('/listings/{listing}', function(Listing $listing) {
 //User
 Route::get('/user/{user}', [App\Http\Controllers\UserController::class, 'index'])->name('user.show');
 
+//Wrong user redirect
+Route::get('/user/null', [App\Http\Controllers\UserController::class, 'index'])->name('user.show');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
