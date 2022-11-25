@@ -32,4 +32,15 @@ class ListingController extends Controller
     {
         return view('listings.create');
     }
+
+    //Store Listing Data
+    public function store(Request $request) 
+    {
+        //dd($request -> all());
+        $formFields = $request->validate(['title' => 'required',
+                                            'tags' => 'required',
+                                            'logo' => 'required',
+                                            'description' => 'required']);
+        return redirect('/');
+    }
 }

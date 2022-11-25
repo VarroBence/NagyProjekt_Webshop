@@ -19,8 +19,9 @@ use App\Http\Controllers\ListingController;
 //All listings
 Route::get('/', [ListingController::class, 'index']);
 
+//Store Listing Data
 
-
+Route::post('/listings', [ListingController::class, 'store']);
 
 //Show create form
 Route::get('/listings/create', [ListingController::class, 'create']);
@@ -35,6 +36,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//Single listing
+//Single listing (Ennek mindenképpen a legalul kell lenni, különben nem lehet majd elérni a get ből az url ben!!!!)
 
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
