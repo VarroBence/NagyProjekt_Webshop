@@ -14,9 +14,7 @@
             <div class="text-xl font-bold mb-4">{{$listing->price}} Ft</div>
             <x-listing-tags :tagsCsv="$listing->tags" />
 
-            <div class="text-lg mt-4">
-                <i class="fa-solid fa-shirt"></i>
-            {{$listing->description}}
+            <div class="text-lg mt-4">           
             </div>
         </div>
     </div>

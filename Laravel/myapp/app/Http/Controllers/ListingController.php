@@ -39,8 +39,11 @@ class ListingController extends Controller
         //dd($request -> all());
         $formFields = $request->validate(['title' => 'required',
                                             'tags' => 'required',
+                                            'price' => 'required',
                                             'logo' => 'required',
                                             'description' => 'required']);
-        return redirect('/');
+        Listing::create($formFields);
+
+         return redirect('/');
     }
 }
