@@ -20,9 +20,10 @@ use App\Http\Controllers\ListingController;
 Route::get('/', [ListingController::class, 'index']);
 
 
-//Single listing
 
-Route::get('/listings/{listing}', [ListingController::class, 'show']);
+
+//Show create form
+Route::get('/listings/create', [ListingController::class, 'create']);
 
 //User
 Route::get('/user/{user}', [App\Http\Controllers\UserController::class, 'index'])->name('user.show');
@@ -33,3 +34,7 @@ Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Single listing
+
+Route::get('/listings/{listing}', [ListingController::class, 'show']);
