@@ -10,7 +10,7 @@
             <p class="mb-4">Post a new T-shirt</p>
         </header>
 
-        <form method="POST" action="/listings">
+        <form method="POST" action="/listings" enctype="multipart/form-data">
             @csrf
             <div class="mb-6">
                 <label for="title" class="inline-block text-lg mb-2">Title</label>
