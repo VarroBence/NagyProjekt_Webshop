@@ -29,6 +29,9 @@ Route::get('/listings/create', [ListingController::class, 'create']);
 //Show edit form
 Route::get('/listings/{listing}/edit', [ListingController::class, 'edit']);
 
+//Update listing
+Route::put('/listings/{listing}', [ListingController::class, 'update']);
+
 //User
 Route::get('/user/{user}', [App\Http\Controllers\UserController::class, 'index'])->name('user.show');
 
@@ -38,6 +41,8 @@ Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
 
 //Single listing (Ennek mindenképpen a legalul kell lenni, különben nem lehet majd elérni a get ből az url ben!!!!)
 
