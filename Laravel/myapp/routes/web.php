@@ -26,6 +26,9 @@ Route::post('/listings', [ListingController::class, 'store']);
 //Show create form
 Route::get('/listings/create', [ListingController::class, 'create']);
 
+//Show edit form
+Route::get('/listings/{listing}/edit', [ListingController::class, 'edit']);
+
 //User
 Route::get('/user/{user}', [App\Http\Controllers\UserController::class, 'index'])->name('user.show');
 
