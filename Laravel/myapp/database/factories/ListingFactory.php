@@ -19,6 +19,7 @@ class ListingFactory extends Factory
         return [
             'title' => $this->faker->sentence(),
             'tags' => 'Black, Latest model, Sport',
+            'logo' => null,
             'price' => $this->faker->numberBetween(1000, 10000),
             'description' => $this->faker->paragraph(5),
         ];
