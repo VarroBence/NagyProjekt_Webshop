@@ -15,9 +15,9 @@
                 <div>
                     <x-listing-tags :tagsCsv="$listing->tags" />
                 </div>
-                 
+
                 <div class="border border-gray-200 w-full mb-6"></div>
-                
+
                     <h3 class="text-3xl font-bold mb-4">
                         Description <i class="fa-solid fa-shirt"></i>
                     </h3>
@@ -25,13 +25,18 @@
                         <pre>{{ $listing->description }}
                         <pre>
 
+                        <?php $shoppingCart = (new Jackiedo\Cart\Cart)->name('shopping')?>
 
                         {{-- Kosárhoz adáshoz majd szerkeszteni!!!!!!!!!! --}}
-                        <a href="" target="_blank"
+                        <button onclick="<?php $shoppingCart->addItem([
+                                                                'id'=>$listing->id,
+                                                                'title'=>$listing->title
+                                                            ])?>"><a target="_blank"
+
                             class="block bg-black text-white py-2 rounded-xl hover:opacity-80"><i class="fa fa-cart-plus"
-                                aria-hidden="true"></i></i> Add to cart</a>
+                                aria-hidden="true">"</i>Add to cart</a></button>
                     </div>
-                
+
             </div>
         </x-card>
         <x-card class="mt-4 p-2 flex space-x-6">
