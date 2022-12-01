@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Nov 10. 11:48
+-- Létrehozás ideje: 2022. Dec 01. 22:03
 -- Kiszolgáló verziója: 10.4.25-MariaDB
 -- PHP verzió: 8.1.10
 
@@ -46,7 +46,9 @@ CREATE TABLE `failed_jobs` (
 CREATE TABLE `listings` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `price` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tags` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `price` int(11) NOT NULL,
+  `logo` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `description` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -56,13 +58,21 @@ CREATE TABLE `listings` (
 -- A tábla adatainak kiíratása `listings`
 --
 
-INSERT INTO `listings` (`id`, `title`, `price`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'Veniam ratione quia modi quasi rerum debitis.', '1071', 'Et consequatur quia nostrum harum corporis delectus assumenda. Assumenda eos distinctio qui accusantium consequatur. Nihil inventore nisi voluptatem officiis. Et libero eum mollitia mollitia.', '2022-11-09 21:33:12', '2022-11-09 21:33:12'),
-(2, 'Aut illum est dolore.', '9822', 'Praesentium voluptate aut eum dignissimos optio fugit voluptas hic. Reiciendis repellendus quis repellendus expedita consequatur sit. Fuga et consequatur facere fugiat molestiae dolor. Accusantium rerum eveniet eum quisquam voluptatem. Maiores tempore saepe sed sed numquam officia qui consequatur. Corrupti et impedit aut architecto repellat itaque at.', '2022-11-09 21:33:12', '2022-11-09 21:33:12'),
-(3, 'Dolor corrupti sequi accusantium cupiditate hic illo cum.', '9346', 'Saepe sint voluptatem molestiae incidunt vel. Minima consequatur id accusantium reiciendis qui id et. Velit ut quisquam et praesentium. Non ullam ipsam iste iusto et. At rerum qui consequuntur. Ducimus eveniet temporibus a earum.', '2022-11-09 21:33:12', '2022-11-09 21:33:12'),
-(4, 'Facilis error illum aperiam voluptate corrupti ducimus.', '7912', 'Iure saepe non velit ex facilis aut provident. Esse repellat magnam nam facere est molestiae voluptas. Ducimus amet sequi veritatis et magni doloremque expedita. Et atque et consectetur rerum similique labore. Quis quas distinctio qui omnis laboriosam.', '2022-11-09 21:33:12', '2022-11-09 21:33:12'),
-(5, 'Perspiciatis asperiores dolores aut molestiae occaecati ad facere iure.', '7154', 'Unde quo ullam voluptas at iusto perferendis. Est est distinctio est ut est sit qui. Iure temporibus dolores et ullam. Aliquam accusamus ut et. Est laboriosam aut laboriosam suscipit praesentium voluptatem sapiente. Assumenda dolores nemo suscipit atque provident sed et. Tenetur voluptatem ratione iure eius numquam laudantium sint.', '2022-11-09 21:33:12', '2022-11-09 21:33:12'),
-(6, 'Quo repellat repellat aut pariatur corporis.', '1611', 'Repellat aliquam quo omnis blanditiis perspiciatis qui id. Nam libero eligendi in qui. Tempora temporibus at amet atque. Dolor quisquam totam numquam. Voluptatum consequatur enim ratione odit nam. Magnam qui doloremque in non.', '2022-11-09 21:33:12', '2022-11-09 21:33:12');
+INSERT INTO `listings` (`id`, `title`, `tags`, `price`, `logo`, `description`, `created_at`, `updated_at`) VALUES
+(3, 'Official Skyrim Metallic Logo - Unisex', 'Unisex, Gaming, Skyrim', 4990, 'logo/9dbYnGTxmORJkvaBBI2GirZlWW8eGwrsC9B4jUFR.jpg', 'Stake your claim as Skyrim’s supreme champion with this incredible t-shirt which features a sleek metallic screen-printed anniversary graphic on the front, making it the perfect addition to any Dragonborn\'s wardrobe!', '2022-12-01 19:19:57', '2022-12-01 19:19:57'),
+(4, 'Official Skyrim Metallic Logo - Unisex', 'Unisex, Gaming, Skyrim', 4990, 'logo/zOxoimOER7bj3MdEnLT0jpZS7K8SXcU4PRZqp7qm.jpg', 'Stake your claim as Skyrim’s supreme champion with this incredible t-shirt which features a sleek metallic screen-printed anniversary graphic on the front, making it the perfect addition to any Dragonborn\'s wardrobe!', '2022-12-01 19:21:17', '2022-12-01 19:21:17'),
+(5, 'Official Space Invaders Game Over - Women', 'Women, Gaming, SpaceInvaders', 5990, 'logo/AUrTpzTqW5sabPXDlMjg3QOGL20I3QCJQCbBeIi0.png', 'Official Taito product. Grey t-shirt with \'Space Invaders: Game Over\' motif on front. Made from 100% premium quality cotton. Perfect present for any retro gamer!', '2022-12-01 19:27:17', '2022-12-01 19:27:31'),
+(6, 'Slayer of Demons - Unisex', 'Unisex, Gaming, Demon\'s Souls', 7990, 'logo/V0BnsXDIKG8DUHlmNzEyXQDLoe4HqhpvlMX7wyZy.png', 'Venture through the foggy gates of Boletaria and become the slayer of demons.\r\nThis official Demon\'s Souls shirt was designed by Ian Wilding and printed by Forward on soft 100% cotton shirts from Next Level and District.', '2022-12-01 19:29:56', '2022-12-01 19:29:56'),
+(7, 'Ori - Kuro\'s Wrath - Women', 'Women, Gaming, Ori', 7990, 'logo/RoFN8UR7pnUMVoW7cu6KyfIqPCG6PY2WfIcQADtq.png', 'The Spirit Tree\'s near...\r\n\r\nThis official Ori and the Blind Forest shirt was designed by Ian Wilding. It\'s printed by Forward on soft, 100% cotton shirts from Canvas and District. Each one comes with a bonus sticker.', '2022-12-01 19:31:22', '2022-12-01 19:31:22'),
+(8, 'Hollow Knight - Wandering Knight - Women', 'Women, Gamin, Hollow Knight', 7990, 'logo/GZaMinOl4xW6ARY2slpbUbMLYtacdW8pbtMKZXLF.png', 'Wealth, glory, enlightenment, that darkness seems to promise all things.\r\n\r\nThis official Hollow Knight shirt was designed by Ilustrata and printed by Forward on soft t-shirts from Canvas and District. (Unisex is a poly-cotton blend, while women\'s shirts are 100% cotton.) Each one comes with a big bonus sticker.', '2022-12-01 19:34:31', '2022-12-01 19:34:31'),
+(9, 'DARK SOULS - Trial By Fire - Man', 'Man, Gaming, Dark Souls', 6990, 'logo/RtccnZOuzyIbC0UMzkmK9KcJsjiZy4ajg2gUma5W.png', 'Ahh, hello. Was it you who rang the Bell of Awakening?\r\n\r\nThis official DARK SOULS shirt was designed by Ian Wilding and printed on soft, 100% cotton t-shirts by Forward Printing.', '2022-12-01 19:36:48', '2022-12-01 19:36:48'),
+(10, 'Iron Maiden Fear of The Dark - Unisex', 'Unisex, Band, Iron Maiden', 8990, 'logo/ATv6WL2ql58eLxEDT14qX8tEQV80WLPDYNPrnEas.jpg', 'T-Shirt Iron Maiden Fear Of The Dark, \r\n100% cotton, \r\nKurzarm, \r\nClosure: Pull-On, \r\n100% cotton, \r\nNormal cut', '2022-12-01 19:40:55', '2022-12-01 19:40:55'),
+(11, 'Iron Maiden TheTrooper Männer - Man', 'Man, Band, Iron Maiden', 8990, 'logo/KEP95rMr1XtXUDRcY9lqir6Y4LdLIa0o6TaMPHLI.jpg', 'T-Shirt Iron Maiden The Trooper,\r\n 100% cotton, Kurzarm, Closure: Pull-On, 100% cotton, Normal cut', '2022-12-01 19:43:33', '2022-12-01 19:43:33'),
+(12, 'Viking Vegvisir Icelandic - Unisex', 'Unisex, Viking, Norden', 4990, 'logo/sCEXeNbJ4lhtOIHpkJF8kEPyo37Z873o5C9NK9r7.jpg', 'Vegvisir is Icelandic for signpost or path finder. According to Huld Manuscript, \"When this sign is worn, you will never get lost in storms or bad weather, even if the way is not known.\" For fans of Nordic mythology.', '2022-12-01 19:46:08', '2022-12-01 19:46:19'),
+(13, 'Retro Dachshund Silhouette - Unisex', 'Unisex, Dachshund, Retro, Dog', 5490, 'logo/BphdVxagk86vH3msKiuP8sOfBdVWcyCYDpVj10ku.jpg', 'Retro Dachshund silhouette design for Dachshund owners - great gift idea for anyone who loves their dog                            Plain colours: 100% cotton; mottled grey: 90% cotton, 10% polyester; all other mottled colours: 50% cotton, 50% polyester.', '2022-12-01 19:49:49', '2022-12-01 19:49:49'),
+(14, 'Dachshund Dog Silhouette Retro - Man', 'Man, Dachshund, Retro, Dog', 5490, 'logo/AeyCMh1HR4fo2ilLnmCjwZIaKDunRtx20UJtkCKt.jpg', 'Do you love Dachshund, Dachshund dog, Teckel? Do you have a Dachshund breeding or a Dachshund puppy? Then the funny vintage retro 60s sixties 70s 70s 80s 80s 90s sausage dog motif is just right. An original classic Dachshund design.', '2022-12-01 19:51:45', '2022-12-01 19:51:45'),
+(15, 'Powerwolf Call of the Wild Men\'s - Women', 'Women, Band, Powerwolf', 3990, 'logo/YV0x1heX5Q28fUqvsXKA85s29qQ7UQoEfav8sqwa.jpg', 'Powerwolf fans get their fanshirt here. Whether they\'re fresh out of kindergarten or new to school, this Call of the Wild motif is anything but boring bar stock. And it\'s top quality and sustainably produced.', '2022-12-01 19:56:32', '2022-12-01 19:56:32'),
+(16, 'KLIEGOU Mens Hip Hop - Man', 'Man, Hip Hop', 7990, 'logo/VMve4stgpYkYyexNHRYwKjaUOaJVuN7m1FYuVZ30.jpg', 'The fabric is a tie dyeing process. Therefore, there is no guarantee that each piece of clothing will be 100% identical. May have slight deviations\r\nUrban inspired T-Shirts instantly takes your style from bland to bold. With several styles and colors to match your closet for a modern and effortless fashion.', '2022-12-01 20:02:16', '2022-12-01 20:02:16');
 
 -- --------------------------------------------------------
 
@@ -81,11 +91,11 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(26, '2014_10_12_000000_create_users_table', 1),
-(27, '2014_10_12_100000_create_password_resets_table', 1),
-(28, '2019_08_19_000000_create_failed_jobs_table', 1),
-(29, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(30, '2022_11_09_184315_create_listings_table', 1);
+(126, '2014_10_12_000000_create_users_table', 1),
+(127, '2014_10_12_100000_create_password_resets_table', 1),
+(128, '2019_08_19_000000_create_failed_jobs_table', 1),
+(129, '2019_12_14_000001_create_personal_access_tokens_table', 1),
+(130, '2022_11_09_184315_create_listings_table', 1);
 
 -- --------------------------------------------------------
 
@@ -134,17 +144,6 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- A tábla adatainak kiíratása `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Mr. Jason Johnson IV', 'bartell.nelle@example.net', '2022-11-09 21:33:12', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'wfzGQV8V1D', '2022-11-09 21:33:12', '2022-11-09 21:33:12'),
-(2, 'Gustave Torphy', 'selmer.moen@example.com', '2022-11-09 21:33:12', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'ZOtJRdhDmT', '2022-11-09 21:33:12', '2022-11-09 21:33:12'),
-(3, 'Dexter Ebert', 'hbeahan@example.org', '2022-11-09 21:33:12', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'lXcig87HWR', '2022-11-09 21:33:12', '2022-11-09 21:33:12'),
-(4, 'Miguel Flatley', 'wehner.raul@example.com', '2022-11-09 21:33:12', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 's3s2Lxnenk', '2022-11-09 21:33:12', '2022-11-09 21:33:12'),
-(5, 'Dr. Daija Quigley PhD', 'josefina.rosenbaum@example.com', '2022-11-09 21:33:12', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '0qRQCxIFYm', '2022-11-09 21:33:12', '2022-11-09 21:33:12');
 
 --
 -- Indexek a kiírt táblákhoz
@@ -204,13 +203,13 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT a táblához `listings`
 --
 ALTER TABLE `listings`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT a táblához `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=131;
 
 --
 -- AUTO_INCREMENT a táblához `personal_access_tokens`
@@ -222,7 +221,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT a táblához `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
