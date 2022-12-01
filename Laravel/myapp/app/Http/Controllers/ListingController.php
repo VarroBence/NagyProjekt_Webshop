@@ -8,83 +8,80 @@ use Illuminate\Http\Request;
 class ListingController extends Controller
 {
     //show all listings
-    public function index() 
+    public function index()
     {
         //dd(request('tag'));
         return view('listings.index', [
             //'heading' => 'Latest Listings',
-            'listings' => Listing::latest() ->filter(request(['tag', 'search'])) -> paginate(6)
+            'listings' => Listing::latest()->filter(request(['tag', 'search']))->paginate(6)
         ]);
-
     }
 
     //show single listing
-    public function show(Listing $listing) 
+    public function show(Listing $listing)
     {
         return view('listings.show', [
             'listing' => $listing
         ]);
-
     }
 
     //show create form
-    public function create() 
+    public function create()
     {
         return view('listings.create');
     }
 
     //Store Listing Data
-    public function store(Request $request) 
+    public function store(Request $request)
     {
         //dd($request -> all());
-        $formFields = $request->validate(['title' => 'required',
-                                            'tags' => 'required',
-                                            'price' => 'required',
-                                            'logo' => 'required',
-                                            'description' => 'required']);
+        $formFields = $request->validate([
+            'title' => 'required',
+            'tags' => 'required',
+            'price' => 'required',
+            'logo' => 'required',
+            'description' => 'required'
+        ]);
 
-        if($request->hasFile('logo')) 
-        {
+        if ($request->hasFile('logo')) {
             $formFields['logo'] = $request->file('logo')->store('logo', 'public');
         }
 
         Listing::create($formFields);
 
-         return redirect('/')->with('message', 'Listing created succesfully!');
-
+        return redirect('/')->with('message', 'Listing created succesfully!');
     }
 
     //Show edit form
-    public function edit(Listing $listing) 
+    public function edit(Listing $listing)
     {
-        return view('listings.edit', ['listing' => $listing] );
+        return view('listings.edit', ['listing' => $listing]);
     }
 
     //Update listing data
-    public function update(Request $request, Listing $listing) 
+    public function update(Request $request, Listing $listing)
     {
 
-        $formFields = $request->validate(['title' => 'required',
-                                            'tags' => 'required',
-                                            'price' => 'required',
-                                            'description' => 'required']);
+        $formFields = $request->validate([
+            'title' => 'required',
+            'tags' => 'required',
+            'price' => 'required',
+            'description' => 'required'
+        ]);
 
-        if($request->hasFile('logo')) 
-        {
+        if ($request->hasFile('logo')) {
             $formFields['logo'] = $request->file('logo')->store('logo', 'public');
         }
 
         $listing->update($formFields);
 
-         return back()->with('message', 'Listing updated succesfully!');
-
+        return back()->with('message', 'Listing updated succesfully!');
     }
 
     //Delete Listing
-    public function destroy(Listing $listing) 
+    public function destroy(Listing $listing)
     {
         $listing->delete();
         return redirect('/')->with('message', 'Listing deleted successfully!');
     }
-
 }

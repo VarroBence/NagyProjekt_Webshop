@@ -11,9 +11,8 @@ class UserController extends Controller
     public function index($user)
     {
         $user = \App\Models\User::find($user);
-            return view('user', [
-                'user' => $user
-            ]);
-
+        return view('user', [
+            'user' => $user
+        ]);
     }
 }
