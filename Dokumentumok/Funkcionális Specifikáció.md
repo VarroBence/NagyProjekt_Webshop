@@ -19,8 +19,8 @@ Azért hogy egyszerűbbé tegyük a vásárlók és eladók közötti interakci�
 
 
 ## 6. Használati esetek
-Felhasználó: Rendeléseket tud leadni az oldalon, melyeket a kosarában nyilvántart. Ezeket a termékeket majd a rendelés leadása gombbal megrendelheti a megadott szállítási címre.
-Admin: A weboldalt tudja módosítani, CRUD műveleteket végezni a termékeken, ezáltal frissíteni tudja a weboldal repertoárját.
+Felhasználó: Rendeléseket tud leadni az oldalon, melyeket a kosarában nyilvántart. Ezeket a termékeket majd a rendelés leadása gombbal megrendelheti az általa megadott szállítási címre.
+Admin: A weboldal tartalmát tudja módosítani, CRUD műveleteket végezni a termékeken, ezáltal frissíteni tudja a weboldal repertoárját.
 
 ## 7. Követelmények megfeleltetése
 Bejelentkezési felület (J1): A felhasználó bejelentkezés után tudja a kosarát megtekinteni, majd a rendelését leadni.
