@@ -6,10 +6,11 @@
 
     <table class="table">
         <tbody>
-        @foreach ($cart as $item)
-
+        <?php $items = Cart::name('shopping')->getItems() ?>
+        @foreach ($items as $hash => $item)
+            <?php $current = $item->getDetails() ?>
             <tr>
-                <td>{{ $item }}</td>
+                <td >{{$current['title']}}</td>
             </tr>
         @endforeach
         </tbody>
