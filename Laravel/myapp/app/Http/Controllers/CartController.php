@@ -1,21 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Jackiedo\Cart\Cart;
 use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
     public function index()
     {
-        $cart = session()->get('cart');
-        if ($cart == null)
-            $cart = [];
-
-        return view('cart')->with('cart', $cart);
-    }
-
-    public function addItem($item){
-        session()->push('cart', $item);
+        return view('cart');
     }
 }
