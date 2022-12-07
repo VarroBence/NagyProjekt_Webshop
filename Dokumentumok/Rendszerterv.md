@@ -116,7 +116,28 @@ Képes új árukat felvenni az oldalra, valamint törölni is tud árut.
 
 ## 11. Telepítési terv
 
-Keressen rá a webshop nevére az interneten és kattintson a linkre.
+A weboldal megnyitásához szükséges lesz telepíteni a Xampp nevű programot, és annak a kezelőfelületén elindítani a szerver hostolását helyi hálozatra.
+Az Apache és MySQL melett elhelyezkedő start gombok megnyomásával.
+![image](https://user-images.githubusercontent.com/103049058/206261590-1126c99f-b09e-4af3-9c64-2d2d059fecc3.png)
+
+Ez után szükség lesz a Composer nevezető programra, amit letöltés után telepíteni kell.
+Telepítést követően a windows parancssorban az xampp/htdocs mappába kell navigálni, és ott lefuttatni egy új projekt létrehozásához szükséges parancssort
+
+![image](https://user-images.githubusercontent.com/103049058/206265273-a6191284-cb68-4b8b-aac9-44482d3d41af.png)
+
+A myapp nevezetű mappában felül kell írni mindent a mi github felületenünkön lévő projekt fájljaival.
+
+A felülírás elvégézése után ismét a parancssorra lesz szükség, mivel itt elkell most navigálni a myapp nevezetű könyvtárba és futtatni a következő parancsot:
+
+![image](https://user-images.githubusercontent.com/103049058/206265655-0c5c4cd5-4e9a-4c8d-ae21-36c7b9665388.png)
+
+Az itt kapott címet kimásolva és beillesztve a böngészőbe megjeleníthetjük a weboldalt.
+
+![image](https://user-images.githubusercontent.com/103049058/206265860-431d3de4-fe0c-4adb-9efe-92ed78f8ecb7.png)
+
+
+
+
 
 ## 12. Karbantartási terv
 
