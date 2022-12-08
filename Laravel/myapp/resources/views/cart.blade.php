@@ -17,6 +17,39 @@
                     </div>
                     <div class="card-body text-start d-lg-flex">
                         <div class="table-responsive overflow-visible" style="margin-left: 0px;">
+                            <table class="table ">
+                                <thead></thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                                <tbody>
+                                <?php $items = Cart::name('shopping')->getItems(); $i = 1; $total = 0;?>
+                                @foreach ($items as $item)
+                                        <?php $listing = $item->getModel();?>
+                                    <tr>
+                                        <th>{{$i++}}</th>
+                                        <td>
+                                            <img class="hidden w-10 mr-6 md:block"
+                                                 src="{{ $listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png') }}"
+                                                 alt="" />
+                                        </td>
+                                        <td>{{$listing->title}}</td>
+                                        <td {{$total += $listing->price}}>{{$listing->price}} Ft</td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                            <div class="row p-2">
+                                <div class="col">
+                                    <label>Total:</label>
+                                </div>
+                                <div class="col" style="text-align: right">
+                                    <label >{{$total}}Ft</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
