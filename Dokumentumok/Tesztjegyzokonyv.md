@@ -27,3 +27,10 @@
 | Teszt #12 | Ha megnézünk egy terméket akkor ne adja a kosárhoz, ha visszalépünk | Nem adja a terméket a kosárhoz  | Hozzáadódik a kosárhoz, ha a bal felső sarokban lévő logo ra kattintunk |  Nagyon nagy probléma, orvosolni kell |
 | Teszt #13 | A kosárból lehet törölni a termékeket | Törlődik a termék a kosárból  | Gombnyomásra nem történik semmi | Probléma, orvosolni kell |
 
+**Tesztelő:** Varró Bence
+
+**Tesztelés dátuma:** 2022.December.08.
+
+| Tesztszám | Rövid leírás  | Várt eredmény | Eredmény  | Megjegyzés  |
+|-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
+| Teszt #01 | "Search" mezőben keresés adat nélkül. | Az egész listát vissza adja, mivel nem volt keresési feltétel. | Az egész listát vissza adja. | Nem találtam problémát. |
