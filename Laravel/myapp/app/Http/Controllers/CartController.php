@@ -20,4 +20,9 @@ class CartController extends Controller
         return back();
     }
 
+    public function remove(Listing $listing){
+        $cart = new Cart();
+        $cartItem = $cart -> name('shopping')->clearItems();
+        return back();
+    }
 }
