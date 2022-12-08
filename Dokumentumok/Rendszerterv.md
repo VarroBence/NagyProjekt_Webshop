@@ -78,10 +78,21 @@ Nincsenek megvásárolt komponenseink.
 
 Fejlesztői eszközök: Visual Studio Code, XAMMP, PHP myadmin, PHPStorm, Photoshop
 
-## 7. Architecturális terv
+## 7. Architekturális terv
+
 Front-end:
 
+- BootStrap Studio
+
 Back-end:
+
+A backend fejlesztéséhez szükséges egy adatbázis szerver, amit MySQL-lel valósítuttuk meg
+
+- Laravel framework a szabványos fájlkezelés és összetettebb fejlesztési lehetőségek végett
+
+- PHP
+
+- JavaScript
 
 ## 8. Implementációs terv
 A webes felület főként Php nyelven íródott minimális JavaScript alkalmazásával és Laravel keretrendszerrel. Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében. Az oldalakat és azokat vezérlő fájlokat a keretrendszer által biztosított lehetőségekkel különítettük el.
