@@ -7,7 +7,7 @@
                 <img class="hidden w-80 mr-6 md:block"
             src="{{ $listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png') }}"
             alt="" />
-            
+
                 <h3 class="text-2xl mb-2">{{ $listing->title }}</h3>
                 <div class="text-xl font-bold mb-4">{{ $listing->price }} Ft</div>
                 <div>
@@ -23,15 +23,15 @@
                         <p>{{ $listing->description }}<p>
 
                         <?php $shoppingCart = (new Jackiedo\Cart\Cart)->name('shopping');?>
-
-                        {{-- Kosárhoz adáshoz majd szerkeszteni!!!!!!!!!! --}}
-                        <button onclick="<?php $shoppingCart->addItem([
-                                                                'id'=>$listing->id,
-                                                                'title'=>$listing->title
-                        ]);?>"><a target="_blank"
-
-                            class="block bg-black text-white py-2 rounded-xl hover:opacity-80"><i class="fa fa-cart-plus"
-                                aria-hidden="true"></i>Add to cart</a></button> 
+                        <button onclick="<?php $cartItem = $listing->addToCart('shopping');?>">
+                            <a target="_blank"
+                               class="block bg-black text-white py-2 rounded-xl hover:opacity-80">
+                                <i class="fa fa-cart-plus"
+                                   aria-hidden="true">
+                                </i>
+                                Add to cart
+                            </a>
+                        </button>
                     </div>
 
             </div>
