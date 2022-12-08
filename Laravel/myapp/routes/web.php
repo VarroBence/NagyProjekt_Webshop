@@ -35,6 +35,12 @@ Route::put('/listings/{listing}', [ListingController::class, 'update']);
 //Delete listing
 Route::delete('/listings/{listing}', [ListingController::class, 'destroy']);
 
+//Order
+Route::post('/cart', [ListingController::class, 'make_order']);
+
+//Placed orders
+Route::get('/orders', [ListingController::class, 'orders_show']);
+
 //User
 Route::get('/user/{user}', [App\Http\Controllers\UserController::class, 'index'])->name('user.show');
 
