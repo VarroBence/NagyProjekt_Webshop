@@ -27,7 +27,6 @@
                     @foreach ($orders as $item)
                         <?php $listing = $item->getModel();
                                 ?>
-                        @if($listing->name)
                         <tr>
                             <td>
                                 <img class="hidden w-10 mr-6 md:block"
@@ -41,7 +40,6 @@
                             <td>{{$listing->city}}</td>
                             <td>{{$listing->adress}}</td>
                         </tr>
-                        @endif
                     @endforeach
                     </tbody>
                 </table>
