@@ -20,7 +20,7 @@ Tesztelő: Iván Ákos. Tóth Tamás, Varró Bence
 ![image](https://user-images.githubusercontent.com/103049058/199763064-5829f004-9d7b-4a69-95ff-584da699eca1.png)
 
 ## 3. Üzleti folyamatok modellje
-![Untitled](https://user-images.githubusercontent.com/78543866/199767167-20d6600e-c66a-470c-9811-53f201a659bf.png)
+![image](https://user-images.githubusercontent.com/78543866/206468340-6b67dc2d-55a0-424f-b373-ba34fcbfbab5.png)
 
 
 ## 4. Követelmények
