@@ -23,7 +23,7 @@
 
                     </tr>
                     <tbody>
-                    <?php $total = 0;?>
+                    <?php $total = 1800;?>
                     @foreach ($orders as $item)
                             <?php $listing = $item->getModel();
                                 ?>
@@ -43,6 +43,11 @@
                     @endforeach
                     </tbody>
                 </table>
+                <div class="row p-2">
+                    <div class="col">
+                        <label>Shipping: 1800 Ft</label>
+                    </div>
+                </div>
                 <div class="row p-2">
                     <div class="col">
                         <label>Total:</label>
