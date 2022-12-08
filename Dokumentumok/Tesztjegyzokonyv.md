@@ -34,3 +34,4 @@
 | Tesztszám | Rövid leírás  | Várt eredmény | Eredmény  | Megjegyzés  |
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
 | Teszt #01 | "Search" mezőben keresés adat nélkül. | Az egész listát vissza adja, mivel nem volt keresési feltétel. | Az egész listát vissza adja. | Nem találtam problémát. |
+| Teszt #02 | A login felületen üres mezőkkel való bejelentkezés. | Művelet nem hajtódik végre. Üzenetben jelezni a felhasználónak a problémát. | Művelet nem hajtódik végre. Üzenetben jelezni a felhasználónak a problémát. | Nem találtam problémát. |
