@@ -36,14 +36,18 @@
                                     <tbody>
                                     @foreach ($items as $item)
                                             <?php $listing = $item->getModel();?>
+                                        <?php $listing = $item->getModel(); $i++;?>
                                         <tr>
                                             <th class="text-center">{{$i++}}</th>
+                                            <th class="text-center">{{$i}}</th>
                                             <td>
                                                 <img class="hidden w-10 mr-6 md:block"
                                                      src="{{ $listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png') }}"
                                                      alt="" />
+                                                     alt=""/>
                                             </td>
                                             <td>{{$listing->title}}</td>
+                                            <td style="width: 20rem; overflow: clip">{{$listing->title}}</td>
                                             <td {{$total += $listing->price}}>{{$listing->price}} Ft</td>
                                             <td>
                                                 <button type="button" class="btn btn-danger">
@@ -66,6 +70,21 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                                <div>
+                                    <div>
+                                        <form class="text-center" method="post" action="/cart/{{ $listing }}">
+                                            @csrf
+                                            @method('POST')
+                                            <input type="hidden" value="{{ $listing }}" name="id">
+                                            <button class="w-auto">
+                                                <a target="_blank"
+                                                   class="block bg-black text-white py-2 rounded-xl hover:opacity-80 p-2">
+                                                    Clear cart contents
+                                                </a>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                             @endif
                         </div>
                     </div>
