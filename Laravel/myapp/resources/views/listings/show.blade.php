@@ -23,15 +23,21 @@
                         <p>{{ $listing->description }}<p>
 
                         <?php $shoppingCart = (new Jackiedo\Cart\Cart)->name('shopping');?>
-                        <button onclick="<?php $cartItem = $listing->addToCart('shopping');?>">
-                            <a target="_blank"
-                               class="block bg-black text-white py-2 rounded-xl hover:opacity-80">
-                                <i class="fa fa-cart-plus"
-                                   aria-hidden="true">
-                                </i>
-                                Add to cart
-                            </a>
-                        </button>
+
+                        <form method="post" action="/listings/{{ $listing->id }}/cart">
+                            @csrf
+                            @method('POST')
+                                <input type="hidden" value="{{ $listing }}" name="id">
+                                <button>
+                                    <a target="_blank"
+                                       class="block bg-black text-white py-2 rounded-xl hover:opacity-80">
+                                        <i class="fa fa-cart-plus"
+                                           aria-hidden="true">
+                                        </i>
+                                        Add to cart
+                                    </a>
+                                </button>
+                        </form>
                     </div>
 
             </div>
