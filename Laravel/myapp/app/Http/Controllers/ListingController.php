@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
 use App\Models\Listing;
 use Illuminate\Http\Request;
+use Jackiedo\Cart\Facades\Cart;
 
 class ListingController extends Controller
 {
@@ -84,4 +86,37 @@ class ListingController extends Controller
         $listing->delete();
         return redirect('/')->with('message', 'Listing deleted successfully!');
     }
+
+    //Order data
+    public function make_order(Request $request) 
+    {
+        $items = Cart::name('shopping')->getItems();
+        foreach ($items as $item)
+        {
+            $listing = $item->getModel();
+
+            $order = new Order;
+            $order->name=$request->name;
+            $order->email=$request->email;
+            $order->phone=$request->phone;
+            $order->post_code=$request->post_code;
+            $order->city=$request->city;
+            $order->title=$listing->title;
+            $order->logo=$listing->logo;
+            $order->price=$listing->price;
+            $order->save();
+        }
+        return redirect("/")->with('message', 'Order placed succesfully!');
+
+        
+    }
+
+    //Show placed orders page
+    public function orders_show()
+    {
+        $orders = Order::all();
+        return view('orders', ['orders' => $orders]);
+    } 
+
+
 }
