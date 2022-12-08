@@ -25,3 +25,5 @@
 | Teszt #10 | Ha nincs kép feltoltve a termékre, akkor a kosárban is a "nincs kép" lesz ott  | Ha nincs kép feltoltve a termékre, akkor a kosárban is a "nincs kép" lesz ott  | Ha nincs kép feltoltve a termékre, akkor a kosárban is a "nincs kép" lesz ott  |  Nem találtam problémát. |
 | Teszt #11 | Ha nincs kép feltoltve a termékre, akkor a leadott rendelésnél is a "nincs kép" lesz ott   | Ha nincs kép feltoltve a termékre, akkor a leadott rendelésnél is a "nincs kép" lesz ott  | Ha nincs kép feltoltve a termékre, akkor a leadott rendelésnél is a "nincs kép" lesz ott |  Nem találtam problémát. |
 | Teszt #12 | Ha megnézünk egy terméket akkor ne adja a kosárhoz, ha visszalépünk | Nem adja a terméket a kosárhoz  | Hozzáadódik a kosárhoz, ha a bal felső sarokban lévő logo ra kattintunk |  Nagyon nagy probléma, orvosolni kell |
+| Teszt #13 | A kosárból lehet törölni a termékeket | Törlődik a termék a kosárból  | Gombnyomásra nem történik semmi | Probléma, orvosolni kell |
+
