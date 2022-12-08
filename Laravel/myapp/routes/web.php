@@ -44,8 +44,14 @@ Route::get('/orders', [ListingController::class, 'orders_show']);
 //User
 Route::get('/user/{user}', [App\Http\Controllers\UserController::class, 'index'])->name('user.show');
 
-//Cart
-Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
+//Cart view
+Route::get('/cart', [\App\Http\Controllers\CartController::class, 'index'])->name('cart');
+
+//Add item to cart
+Route::post('/listings/{listing}/cart', [\App\Http\Controllers\CartController::class, 'add'])->name('cart.store');
+
+//Remove item from cart
+Route::post('/cart/{i}', [\App\Http\Controllers\CartController::class, 'remove'])->name('cart.remove');
 
 Auth::routes();
 
