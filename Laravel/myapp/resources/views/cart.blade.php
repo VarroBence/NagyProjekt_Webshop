@@ -75,26 +75,27 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Shipping details</h4>
-                        <form>
+                        <form method="POST" action="/cart">
+                            @csrf
                             <div class="row">
-                                <div class="col"><label class="form-label">name</label><input class="form-control" type="text">
+                                <div class="col"><label class="form-label">name</label><input class="form-control" type="text" name="name">
                                     <div class="row">
-                                        <div class="col"><label class="form-label">email</label><input class="form-control" type="email"></div>
+                                        <div class="col"><label class="form-label">email</label><input class="form-control" type="email" name="email"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col"><label class="form-label">phone</label><input class="form-control d-lg-flex justify-content-lg-end" type="tel"></div>
+                                <div class="col"><label class="form-label">phone</label><input class="form-control d-lg-flex justify-content-lg-end" type="tel" name="phone"></div>
                             </div>
                             <div class="row">
-                                <div class="col"><label class="form-label">post code</label><input class="form-control d-lg-flex justify-content-lg-end" type="text"></div>
-                                <div class="col"><label class="form-label">city</label><input class="form-control" type="text"></div>
+                                <div class="col"><label class="form-label">post code</label><input class="form-control d-lg-flex justify-content-lg-end" type="text" name="post_code"></div>
+                                <div class="col"><label class="form-label">city</label><input class="form-control" type="text" name="city"></div>
                             </div>
                             <div class="row">
-                                <div class="col"><label class="form-label">address</label><input class="form-control" type="text"></div>
+                                <div class="col"><label class="form-label">address</label><input class="form-control" type="text" name="address"></div>
                             </div>
                             <div class="row">
-                                <div class="col d-lg-flex justify-content-lg-end" style="margin-top: 26px;"><button class="btn btn-primary d-lg-flex" type="button">place order</button></div>
+                                <div class="col d-lg-flex justify-content-lg-end" style="margin-top: 26px;"><button class="btn btn-primary d-lg-flex" type="submit">place order</button></div>
                             </div>
                         </form>
                     </div>

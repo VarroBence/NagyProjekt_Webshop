@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Order;
 use App\Models\Listing;
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 use Jackiedo\Cart\Facades\Cart;
 
@@ -94,6 +95,7 @@ class ListingController extends Controller
         foreach ($items as $item)
         {
             $listing = $item->getModel();
+            //$user_id = User::name('user')->getItems('user_id');
 
             $order = new Order;
             $order->name=$request->name;
@@ -104,6 +106,7 @@ class ListingController extends Controller
             $order->title=$listing->title;
             $order->logo=$listing->logo;
             $order->price=$listing->price;
+           // $order->user_id=$listing->$user_id;
             $order->save();
         }
         return redirect("/")->with('message', 'Order placed succesfully!');
