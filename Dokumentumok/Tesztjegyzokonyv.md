@@ -41,3 +41,4 @@
 | Teszt #06 | Az update felületen hibás típusú input megadása. | Művelet nem hajtódik végre. | Művelet nem hajtódik végre. Üzenetben jelezni a felhasználónak, hogy mi a gond. | Nem találtam problémát. |
 | Teszt #07 | Az update felületen a mezők üresen hagyása. | Művelet nem hajtódik végre. | Művelet nem hajtódik végre. Üzenetben jelezni a felhasználónak, hogy mi a gond.| Nem találtam problémát. |
 | Teszt #08 | Üres kosár esetén rendelés leadása. | Művelet nem hajtódik végre. | A művelet végrehajtódik. |  Mi hamarabbi orvoslásra szorul. |
+| Teszt #09 | Termék feltöltése hozzátartozó kép nélkül. | A kép helyére egy alapértelmezett "nincs kép" jelenik meg. | A kép helyére egy alapértelmezett "nincs kép" jelenik meg. | Nem találtam problémát. |
