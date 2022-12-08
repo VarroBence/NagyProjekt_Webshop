@@ -53,6 +53,18 @@
                                         </tr>
                                     @endforeach
                                         <tr>
+                                            <td>Shipping:</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td {{$total += $shipping}}>{{$shipping}} Ft</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold">Total:</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>{{$total}} Ft</td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             @endif
                         </div>
