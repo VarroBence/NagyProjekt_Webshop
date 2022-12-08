@@ -37,3 +37,4 @@
 | Teszt #02 | A login felületen üres mezőkkel való bejelentkezés. | Művelet nem hajtódik végre. Üzenetben jelezni a felhasználónak a problémát. | Művelet nem hajtódik végre. Üzenetben jelezni a felhasználónak a problémát. | Nem találtam problémát. |
 | Teszt #03 | A register felületen üres mezővel történő regisztráció. | Művelet nem hajtódik végre. Üzenetben jelezni a felhasználónak a problémát. | Művelet nem hajtódik végre. Üzenetben jelezni a felhasználónak a problémát. | Nem találtam problémát. |
 | Teszt #04 | A create felületen a mezők üresen hagyása. | Művelet nem hajtódik végre. Üzenetben jelezni a felhasználónak a hibát. | Művelet nem hajtódik végre. Üzenetben jelezni a felhasználónak a hibát. | Nem találtam problémát. |
+| Teszt #05 | A create felületen hibás típusú input megadása. | Művelet nem hajtódik végre. | Művelet nem hajtódik végre. Üzenetben jelezni a felhasználónak, hogy mi a gond. | Nem találtam problémát. |
