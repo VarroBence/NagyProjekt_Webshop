@@ -26,12 +26,9 @@
     </script>
     <title>Webshop | Find T-shirts for your taste</title>
 </head>
-
-@php
-
-$admin = \App\Http\Controllers\AdminController::check(\Illuminate\Support\Facades\Auth::id());
-
-@endphp
+    @php
+    $admin = \App\Http\Controllers\AdminController::check(\Illuminate\Support\Facades\Auth::id());
+    @endphp
 <body class="mb-48"
     style="background-image:url({{ url('images/background.jpg') }}); background-size: cover; background-position: center center">
     <nav class="flex justify-between items-center mb-4">
@@ -84,8 +81,9 @@ $admin = \App\Http\Controllers\AdminController::check(\Illuminate\Support\Facade
         <footer
             class="fixed bottom-0 left-0 w-full  flex  items-center justify-start font-bold bg-laravel text-white h-20 mt-24 opacity-90 md:justify-center">
             <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
-
+            @if($admin)
             <a href="listings/create" class="absolute top-1/4 right-10 bg-black text-white py-2 px-5">Post a T-shirt</a>
+            @endif
         </footer>
 
 
