@@ -8,10 +8,15 @@ use function PHPUnit\Framework\isEmpty;
 
 class AdminController extends Controller
 {
-    public static function check(int $id): bool
+    public static function check($id): bool
     {
-        $found = DB::select('select * from users where id = ?', [$id]);
-        if(isEmpty($found)){
+
+        if ($id == null){
+            return false;
+        }
+
+        $found = DB::select('select * from admins where id = ?', [$id]);
+        if(empty($found)){
             return false;
         }
         return true;
