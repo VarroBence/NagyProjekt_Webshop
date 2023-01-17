@@ -6,6 +6,7 @@ use App\Models\Order;
 use App\Models\Listing;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Jackiedo\Cart\Facades\Cart;
 
 class ListingController extends Controller
@@ -107,7 +108,7 @@ class ListingController extends Controller
             $order->logo=$listing->logo;
             $order->price=$listing->price;
             $order->adress=$request->adress;
-           // $order->user_id=$listing->$user_id;
+            $order->user_id=Auth::id();
             $order->save();
         }
         return redirect("/")->with('message', 'Order placed succesfully!');
