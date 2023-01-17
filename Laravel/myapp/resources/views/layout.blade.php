@@ -35,9 +35,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('cart') }}">Cart</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/orders">Orders</a>
-            </li>
             @guest
                 @if (Route::has('login'))
                     <li class="nav-item">
@@ -51,6 +48,9 @@
                     </li>
                 @endif
             @else
+                <li class="nav-item">
+                    <a class="nav-link" href="/orders">Orders</a>
+                </li>
                 <li>
                     <a class="nav-link" href="/user/{{ Auth::user()->id }}">Profile</a>
                 </li>
