@@ -27,6 +27,11 @@
     <title>Webshop | Find T-shirts for your taste</title>
 </head>
 
+@php
+
+$admin = \App\Http\Controllers\AdminController::check(\Illuminate\Support\Facades\Auth::id());
+
+@endphp
 <body class="mb-48"
     style="background-image:url({{ url('images/background.jpg') }}); background-size: cover; background-position: center center">
     <nav class="flex justify-between items-center mb-4">
@@ -48,9 +53,11 @@
                     </li>
                 @endif
             @else
+                @if($admin)
                 <li class="nav-item">
                     <a class="nav-link" href="/orders">Orders</a>
                 </li>
+                @endif
                 <li>
                     <a class="nav-link" href="/user/{{ Auth::user()->id }}">Profile</a>
                 </li>
