@@ -5,7 +5,7 @@
 <div class="container">
     <div class="card d-lg-flex align-items-lg-center">
         <div class="card-body">
-            <h4 class="card-title">Placed orders</h4>
+            <h4 class="card-title">All orders orders</h4>
         </div>
         <div class="card-body text-start d-lg-flex">
             <div class="table-responsive overflow-visible" style="margin-left: 0px;">
@@ -23,7 +23,7 @@
 
                     </tr>
                     <tbody>
-                    <?php $total = 1800;?>
+                    <?php $total = 0;?>
                     @foreach ($orders as $item)
                         <?php $listing = $item->getModel();
                                 ?>
