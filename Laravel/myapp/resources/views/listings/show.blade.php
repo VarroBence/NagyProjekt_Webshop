@@ -1,5 +1,7 @@
 @extends('layout')
-
+    @php
+        $admin = \App\Http\Controllers\AdminController::check(\Illuminate\Support\Facades\Auth::id());
+    @endphp
 @section('content')
     <div class="mx-5" style="margin-left: 30rem; margin-right: 30rem">
         <x-card class="p-10">
@@ -42,6 +44,7 @@
 
             </div>
         </x-card>
+        @if($admin)
         <x-card class="mt-4 p-2 flex space-x-6">
             <a href="/listings/{{ $listing->id }}/edit">
                 <i class="fa-solid fa-pencil"></i>Edit
@@ -55,5 +58,6 @@
                 </button>
             </form>
         </x-card>
+        @endif
     </div>
 @endsection
