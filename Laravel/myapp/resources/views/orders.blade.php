@@ -19,7 +19,7 @@
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
                         <th scope="col">City</th>
-                        <th scope="col">Adress</th>
+                        <th scope="col">Address</th>
 
                     </tr>
                     <tbody>

@@ -89,7 +89,7 @@ class ListingController extends Controller
     }
 
     //Order data
-    public function make_order(Request $request) 
+    public function make_order(Request $request)
     {
         $items = Cart::name('shopping')->getItems();
         foreach ($items as $item)
@@ -106,12 +106,13 @@ class ListingController extends Controller
             $order->title=$listing->title;
             $order->logo=$listing->logo;
             $order->price=$listing->price;
+            $order->adress=$request->adress;
            // $order->user_id=$listing->$user_id;
             $order->save();
         }
         return redirect("/")->with('message', 'Order placed succesfully!');
 
-        
+
     }
 
     //Show placed orders page
@@ -119,7 +120,7 @@ class ListingController extends Controller
     {
         $orders = Order::all();
         return view('orders', ['orders' => $orders]);
-    } 
+    }
 
 
 }

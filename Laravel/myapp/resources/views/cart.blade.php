@@ -133,7 +133,7 @@
                                     <label class="form-label">
                                         address
                                     </label>
-                                    <input class="form-control" type="text" name="address">
+                                    <input class="form-control" type="text" name="adress">
                                 </div>
                             </div>
                             <div class="row">
